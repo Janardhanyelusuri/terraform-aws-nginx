@@ -1,3 +1,10 @@
+provider "aws" {
+  region = var.aws_region
+}
+
+provider "local" {}
+
+provider "tls" {}
 
 module "networking" {
   source = "./modules/networking"
