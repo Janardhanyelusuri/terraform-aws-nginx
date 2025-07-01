@@ -1,6 +1,6 @@
 
 resource "aws_instance" "public_vm" {
-  ami                    = "ami-0c55b159cbfafe1f0" # Replace with region-specific AMI
+  ami                    = "ami-020cba7c55df1f615" # Replace with region-specific AMI
   instance_type          = "t2.micro"
   subnet_id              = var.public_subnet
   key_name               = var.key_name
@@ -16,7 +16,7 @@ resource "aws_instance" "public_vm" {
 }
 
 resource "aws_instance" "private_vm" {
-  ami                    = "ami-0c55b159cbfafe1f0" # Replace with region-specific AMI
+  ami                    = "ami-020cba7c55df1f615" # Replace with region-specific AMI
   instance_type          = "t2.micro"
   subnet_id              = var.private_subnet
   key_name               = var.key_name
