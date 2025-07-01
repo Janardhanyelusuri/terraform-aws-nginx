@@ -32,7 +32,7 @@ resource "aws_instance" "private_vm" {
               sudo systemctl start nginx
               EOF
  tags = {
-    Name = "public_vm"
+    Name = "private_vm"
   }
 }
 
